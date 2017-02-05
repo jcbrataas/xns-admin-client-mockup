@@ -1,0 +1,61 @@
+<header class="app-header navbar">
+    <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button">&#9776;</button>
+    <a class="navbar-brand" href="#"></a>
+    <ul class="nav navbar-nav hidden-md-down">
+        <li class="nav-item">
+            <a class="nav-link navbar-toggler sidebar-toggler" href="#">&#9776;</a>
+        </li>
+    </ul>
+
+</header>
+
+<div class="app-body">
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <img src="assets/img/avatars/7.jpg" class="img-avatar" alt="Avatar">
+            <div>
+                <strong>JanCB</strong>
+            </div>
+            <div class="text-muted">
+                <small>Dude</small>
+            </div>
+
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-link">
+                    <i class="icon-settings"></i>
+                </button>
+                <button type="button" class="btn btn-link">
+                    <i class="icon-user"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/units']"><i class="fa fa-fort-awesome"></i> Units</a>
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/components-list']"><i class="fa fa-cubes"></i> Components</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <breadcrumbs></breadcrumbs>
+        </ol>
+
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+</div>
+
+<footer class="app-footer">
+    <a href="https://xnsense.com">xnsense</a> &copy; 2017.
+</footer>
